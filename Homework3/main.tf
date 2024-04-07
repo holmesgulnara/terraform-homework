@@ -25,6 +25,10 @@ resource "aws_instance" "app" {
   count = 3
   user_data = file("apache.sh")
   user_data_replace_on_change = true
+
+  tags = {
+    Name = "web-${count.index + 1}"
+  }
 }
 
 output ec2_1 {
