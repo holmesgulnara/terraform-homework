@@ -27,7 +27,7 @@ resource "aws_instance" "app" {
   user_data_replace_on_change = true
 
   tags = {
-    Name = "web-${count.index + 1}"
+    Name = "app-${count.index + 1}"
   }
 }
 
