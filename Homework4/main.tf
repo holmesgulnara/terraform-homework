@@ -28,11 +28,10 @@ variable key_name {
     type = string
 }
 
-# variable count {
-#     description = "Provide number of Instances"
-#     default = 1
-#     type = number
-# }
+variable "ports" {
+  description = "available ports"
+  type        = list(number)
+}
 
 variable "instances_per_subnet" {
   description = "Number of EC2 instances in each private subnet"
