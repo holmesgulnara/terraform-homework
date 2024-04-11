@@ -10,6 +10,7 @@ type = "t2.micro"
 availibility_zone = "us-west-2b"
 key_name = "my-laptop-key"
 instances_per_subnet = 1
+ports = [ 443, 80, 22 ]
 
 2. virginia.tfvars
 region = "us-east-1"
@@ -18,6 +19,7 @@ type = "t2.micro"
 availibility_zone = "us-east-1d"
 key_name = "my-laptop-key"
 instances_per_subnet = 1
+ports = [ 443, 80, 22 ]
 
 3. ohio.tfvars
 region = "us-east-2"
@@ -26,6 +28,7 @@ type = "t2.micro"
 availibility_zone = "us-east-2c"
 key_name = "my-laptop-key"
 instances_per_subnet = 1
+ports = [ 443, 80, 22 ]
 
 4. california.tfvars
 region = "us-west-1"
@@ -34,3 +37,4 @@ type = "t2.micro"
 availibility_zone = "us-west-1a"
 key_name = "my-laptop-key"
 instances_per_subnet = 1
+ports = [ 443, 80, 22 ]
