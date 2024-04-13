@@ -12,14 +12,6 @@ type = list(object({
 }))
 }
 
-# variable "vpc_settings" {
-#   default = {
-#     cidr            = string
-#     enable_dns_support = true
-#     enable_dns_hostname = true
-#   }
-# }
-
 variable subnet_cidr {
   type = list(object({
     cidr = string
