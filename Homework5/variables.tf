@@ -59,6 +59,18 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-variable instance_type {
-    type = string
+variable internet_gw {
+  type = string
+}
+
+variable route_tables {
+  type = list(string)
+}
+
+variable ec2_details {
+  type = list(object({
+    ec2_type = string
+    name_amazon = string
+    name_ubuntu = string
+  }))
 }

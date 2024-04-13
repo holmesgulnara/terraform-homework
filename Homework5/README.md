@@ -1,4 +1,3 @@
-parameters that I have passed as part of Homework5 task are:
 region = "us-west-2"
 vpc_settings = [ 
     {
@@ -17,4 +16,12 @@ subnet_cidr = [
 
 ports = [ 22, 80 ]
 
-instance_type = "t2.micro"
+route_tables = [ "public-rt", "private-rt" ]
+
+ec2_details = [ {
+  ec2_type = "t2.micro"
+  name_amazon = "amazon"
+  name_ubuntu = "ubuntu"
+} ]
+
+internet_gw = "homework5_igw"
